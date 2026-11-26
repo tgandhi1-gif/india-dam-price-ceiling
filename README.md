@@ -43,6 +43,28 @@ Comparing average clearing prices (in ₹/MWh) across the midday solar window ve
 | 2026 | 1,894 | 7,080 | 5,186 | 3.74 |
 
 Midday prices have dropped every year while evening prices have climbed, widening the spread by 41% over 32 months. Daily medians follow the exact same trajectory, confirming this is a structural shift rather than a handful of outlier days skewing the mean.
+**4. Unserved demand has tripled in the evening.**
+
+The data also records how much electricity buyers bid for (`purchase_bid`)
+against how much actually cleared (`mcv`). The difference is demand that
+went unserved at the market price.
+
+Averaged across the evening window:
+
+| Year | Unserved evening demand |
+|------|------------------------|
+| 2024 | 5,506 MW |
+| 2025 | 7,889 MW |
+| 2026 | 17,930 MW |
+
+Splitting by whether the block hit the ceiling makes the pattern sharper.
+In 2026, capped blocks averaged 29,927 MW of unserved demand against
+6,491 MW in uncapped blocks. In 2024 the same comparison was 11,122 MW
+against 2,896 MW.
+
+So the ceiling is not simply a number prices bump against. When it binds,
+large volumes of demand go unmet at that price, and the gap has grown
+roughly fivefold in three years.
 
 ## Why This Matters
 
